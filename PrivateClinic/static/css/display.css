@@ -498,10 +498,6 @@ font-size:48px;
   padding: 3px 6px;
 }
 
-.header-nav .notifications {
-  inset: 8px -15px auto auto !important;
-}
-
 .header-nav .notifications .notification-item {
   display: flex;
   align-items: center;
@@ -528,10 +524,6 @@ font-size:48px;
 
 .header-nav .notifications .notification-item:hover {
   background-color: #f6f9ff;
-}
-
-.header-nav .messages {
-  inset: 8px -15px auto auto !important;
 }
 
 .header-nav .messages .message-item {
