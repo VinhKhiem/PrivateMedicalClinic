@@ -1,0 +1,542 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" style="background-image: url(static/image/slide/slide-1.jpg)">
+                <div class="container">
+                    <h2>Chào mừng đến với <span>Phòng khám NWA</span></h2>
+                    <p>Với trang thiết bị y tế tiên tiến và đội ngũ chuyên gia hàng đầu, Phòng khám NWA
+                        là điểm đến hàng đầu cho mọi nhu cầu chăm sóc sức khỏe. Chúng tôi cam kết đem lại những dịch vụ
+                        y tế đa dạng, từ phòng mạch đến phẫu thuật, để đáp ứng mọi nhu cầu y tế của cộng đồng.</p>
+                    <a href="#about" class="btn-get-started scrollto">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+    </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                        <h4 class="title"><a href="">Chăm Sóc Sức Khỏe Tận Tâm</a></h4>
+                        <p class="description">Chương trình chăm sóc bệnh nhân không chỉ hướng đến việc chữa trị bệnh
+                            tật mà còn quan tâm đến chất lượng cuộc sống và phục hồi sức khỏe toàn diện.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon"><i class="fas fa-pills"></i></div>
+                        <h4 class="title"><a href="">Đội Ngũ Y Bác Sĩ Chuyên Nghiệp</a></h4>
+                        <p class="description">Đội ngũ y bác sĩ chuyên nghiệp, có trình độ cao và kinh
+                            nghiệm đa dạng.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon"><i class="fas fa-thermometer"></i></div>
+                        <h4 class="title"><a href="">Trang Thiết Bị Hiện Đại</a></h4>
+                        <p class="description">Bệnh viện được trang bị các thiết bị y tế hiện đại nhất, giúp chẩn đoán
+                            nhanh chóng và chính xác.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon"><i class="fas fa-dna"></i></div>
+                        <h4 class="title"><a href="">Môi Trường Tốt Nhất</a></h4>
+                        <p class="description">Không gian thoải mái giúp giảm căng thẳng và tạo điều kiện thuận lợi nhất
+                            cho quá trình điều trị và phục hồi.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+
+            <div class="text-center">
+                <h3>Trường hợp khẩn cấp? Hãy đặt lịch ngay</h3>
+                <p>Vui lòng điền đầy đủ thông tin, chúng tôi sẽ liên hệ ngay với bạn sau vài phút nữa.</p>
+                <a class="cta-btn scrollto" href="#appointment">Đặt lịch hẹn</a>
+            </div>
+
+        </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>GIỚI THIỆU</h2>
+                <p>Phòng khám NWA tự hào là một trung tâm y tế hiện đại, cam kết mang đến dịch vụ chăm sóc sức khỏe
+                    tốt nhất cho cộng đồng. Với đội ngũ y bác sĩ và nhân viên chuyên nghiệp, chúng tôi không chỉ cung
+                    cấp các liệu pháp điều trị tiên tiến mà còn tạo ra một môi trường thoải mái và an toàn để bệnh nhân
+                    hồi phục.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="static/image/about.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+                    <h3>PHÒNG KHÁM NWA</h3>
+                    <p class="fst-italic">
+                        Đây sẽ là nơi:
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> Nơi Chăm Sóc Sức Khỏe Tận Tâm</li>
+                        <li><i class="bi bi-check-circle"></i> Nơi Niềm Tin Bắt Đầu</li>
+                        <li><i class="bi bi-check-circle"></i> Nơi Yêu Thương và Chăm Sóc Toàn Diện</li>
+                        <li><i class="bi bi-check-circle"></i> Nơi Hành Trình Hòa Mình Trong Sức Khỏe</li>
+                        <li><i class="bi bi-check-circle"></i>Nơi Sinh Mệnh Bắt Đầu</li>
+                    </ul>
+                    <p>
+                        Phòng khám NWA không chỉ là nơi cung cấp dịch vụ y tế, mà còn là một gia đình yêu thương. Với
+                        tâm huyết và trách nhiệm cao, đội ngũ y bác sĩ và nhân viên tại đây luôn sẵn sàng hỗ trợ bệnh
+                        nhân vượt qua mọi thách thức sức khỏe. Chúng tôi tin rằng sự chăm sóc toàn diện không chỉ là
+                        điều trị bệnh, mà còn là tạo ra sự an tâm và hạnh phúc.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services services">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Dịch vụ</h2>
+                <p>Phòng khám đảm bảo chất lượng dịch vụ y tế cao cấp, đồng thời không ngừng nâng cao và cải tiến theo
+                    thời gian để đáp ứng nhu cầu ngày càng cao của bệnh nhân.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4 class="title"><a href="">Nội Khoa</a></h4>
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon"><i class="fas fa-pills"></i></div>
+                    <h4 class="title"><a href="">Ngoại Khoa</a></h4>
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon"><i class="fas fa-hospital-user"></i></div>
+                    <h4 class="title"><a href="">Tai - Mũi - Họng</a></h4>
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon"><i class="fas fa-dna"></i></div>
+                    <h4 class="title"><a href="">Da Liễu</a></h4>
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon"><i class="fas fa-wheelchair"></i></div>
+                    <h4 class="title"><a href="">Sản phụ</a></h4>
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon"><i class="fas fa-notes-medical"></i></div>
+                    <h4 class="title"><a href="">Tiêu hóa</a></h4>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Appointment Section ======= -->
+    <!--    <section id="appointment" class="appointment section-bg">-->
+    <!--        <div class="container" data-aos="fade-up">-->
+
+    <!--            <div class="section-title">-->
+    <!--                <h2>Đặt lịch hẹn</h2>-->
+    <!--                <p>Vui lòng điền đầy đủ thông tin. Chúng tôi sẽ sớm liên lạc với bạn để xác nhận.</p>-->
+    <!--            </div>-->
+
+    <!--            <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up"-->
+    <!--                  data-aos-delay="100">-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-md-4 form-group">-->
+    <!--                        <input type="text" name="name" class="form-control" id="name" placeholder="Họ và tên" required>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-md-4 form-group mt-3 mt-md-0">-->
+    <!--                        <input type="email" class="form-control" name="email" id="email" placeholder="Nhập email"-->
+    <!--                               required>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-md-4 form-group mt-3 mt-md-0">-->
+    <!--                        <input type="tel" class="form-control" name="phone" id="phone"-->
+    <!--                               placeholder="Nhập số điện thoại liên lạc"-->
+    <!--                               required>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-md-4 form-group mt-3">-->
+    <!--                        <input type="datetime" name="date" class="form-control datepicker" id="date"-->
+    <!--                               placeholder="Ngày hẹn" required>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-md-4 form-group mt-3">-->
+    <!--                        <select name="department" id="department" class="form-select">-->
+    <!--                            <option value="">Nhập địa điểm</option>-->
+    <!--                            <option value="Department 1">Quận 1</option>-->
+    <!--                            <option value="Department 2">Quận 4</option>-->
+    <!--                            <option value="Department 3">Huyện Nhà Bè</option>-->
+    <!--                        </select>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-md-4 form-group mt-3">-->
+    <!--                        <select name="doctor" id="doctor" class="form-select">-->
+    <!--                            <option value="">Chọn bác sĩ</option>-->
+    <!--                            <option value="Doctor 1">Bác sĩ 1</option>-->
+    <!--                            <option value="Doctor 2">Bác sĩ 2</option>-->
+    <!--                            <option value="Doctor 3">Bác sĩ 3</option>-->
+    <!--                        </select>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+
+    <!--                <div class="form-group mt-3">-->
+    <!--                    <textarea class="form-control" name="message" rows="5" placeholder="Tin nhắn (Optional)"></textarea>-->
+    <!--                </div>-->
+    <!--                <div class="my-3">-->
+    <!--                    <div class="loading">Loading</div>-->
+    <!--                    <div class="error-message"></div>-->
+    <!--                    <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>-->
+    <!--                </div>-->
+    <!--                <div class="text-center">-->
+    <!--                    <button type="submit">Make an Appointment</button>-->
+    <!--                </div>-->
+    <!--            </form>-->
+
+    <!--        </div>-->
+    <!--    </section>-->
+    <!-- End Appointment Section -->
+
+
+    <!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Bác sĩ</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-img">
+                            <img src="static/image/doctors/doctors-1.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Giáo sư - Tiến sĩ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-img">
+                            <img src="static/image/doctors/doctors-2.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Sarah Jhonson</h4>
+                            <span>Phó Giáo sư - Tiến sĩ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member-img">
+                            <img src="static/image/doctors/doctors-3.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>William Anderson</h4>
+                            <span>Phó Giáo sư - Tiến sĩ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="400">
+                        <div class="member-img">
+                            <img src="static/image/doctors/doctors-4.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Amanda Jepson</h4>
+                            <span>Tiến sĩ</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Doctors Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Liên hệ</h2>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="info-box">
+                                <i class="bx bx-map"></i>
+                                <h3>Địa chỉ</h3>
+                                <p>Nhà Bè, TP. Hồ Chí Mình, Việt Nam</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-box mt-4">
+                                <i class="bx bx-envelope"></i>
+                                <h3>Email</h3>
+                                <p>info@example.com<br>contact@example.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-box mt-4">
+                                <i class="bx bx-phone-call"></i>
+                                <h3>Điện thoại</h3>
+                                <p>+84 12 345 678<br>+84 87 654 321</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Họ và tên"
+                                       required="">
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="Nhập Email" required="">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Tiêu đề"
+                                   required="">
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="7" placeholder="Lời nhắn"
+                                      required=""></textarea>
+                        </div>
+<!--                        <div class="my-3">-->
+<!--                            <div class="loading">Loading</div>-->
+<!--                            <div class="error-message"></div>-->
+<!--                            <div class="sent-message">Your message has been sent. Thank you!</div>-->
+<!--                        </div>-->
+                        <div class="text-center mt-3">
+                            <button type="submit">Gửi</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Contact Section -->
+</main><!-- End #main -->
+
+{% endblock %}
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Phòng khám Đa khoa ABC</title>-->
+<!--    <link rel="shortcut icon"-->
+<!--          href="https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1703116800&semt=ais"-->
+<!--          type="image/img">-->
+<!--    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+<!--    <link href=static/css/style.css rel="stylesheet">-->
+
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"-->
+<!--          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"-->
+<!--            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"-->
+<!--            crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"-->
+<!--            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"-->
+<!--            crossorigin="anonymous"></script>-->
+<!--    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"-->
+<!--          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="-->
+<!--          crossorigin="anonymous" referrerpolicy="no-referrer"/>-->
+
+
+<!--</head>-->
+<!--<body>-->
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navmenu">-->
+<!--    <div class="container-fluid navbarstyle">-->
+<!--        <a  href="#"><i class="fa-solid fa-stethoscope fonttext" style="margin-right:10px"></i> </a>-->
+
+<!--        <div class="collapse navbar-collapse" id="main-nav">-->
+<!--            <ul class="navbar-nav">-->
+<!--                <li class="nav-item active"><a class="nav-link" href="#">TRANG CHỦ </a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" href="#"> GIỚI THIỆU </a></li>-->
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> BÁC SĨ </a>-->
+<!--                    <ul class="dropdown-menu">-->
+<!--                        <li><a class="dropdown-item" href="#">THÔNG TIN </a></li>-->
+<!--                        <li><a class="dropdown-item" href="#"> ĐỘI NGŨ BÁC SĨ </a></li>-->
+<!--                    </ul>-->
+<!--                <li class="nav-item dropdown" >-->
+<!--                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">CHUYÊN KHOA </a>-->
+<!--                    <ul class="dropdown-menu">-->
+<!--                        <li><a class="dropdown-item " href="#"> NỘI KHOA</a></li>-->
+<!--                        <li><a class="dropdown-item" href="#"> NGOẠI KHOA </a></li>-->
+<!--                        <li><a class="dropdown-item" href="#"> TAI MŨI HỌNG </a></li>-->
+<!--                        <li><a class="dropdown-item" href="#"> DA LIỄU </a></li>-->
+<!--                        <li><a class="dropdown-item" href="#"> SẢN PHỤ </a></li>-->
+<!--                        <li><a class="dropdown-item" href="#"> TIÊU HÓA </a></li>-->
+<!--                    </ul>-->
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">DỊCH VỤ KHÁCH HÀNG </a>-->
+<!--                    <ul class="dropdown-menu" >-->
+<!--                        <li><a class="dropdown-item" href="#"> ĐẶT LỊCH KHÁM</a></li>-->
+<!--                        <li><a class="dropdown-item" href="#"> HƯỚNG DẪN KHÁM BỆNH </a></li>-->
+<!--                        <li><a class="dropdown-item" href="#"> BẢNG GIÁ KHÁM BỆNH </a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                <li class="nav-item"><a class="nav-link" href="#"> GÓP Ý VÀ ĐÁNH GIÁ </a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" href="#"> TIN TỨC Y TẾ </a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" href="#"> HỖ TRỢ KHÁCH HÀNG </a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <form class="d-inline-flex bodersearch" style="">-->
+<!--        <input class=" search" type="text"-->
+<!--               placeholder="Nhập tìm kiếm...">-->
+<!--        <button class="btn btn-primary" type="button"><i-->
+<!--                class="fa-solid fa-magnifying-glass"></i></button>-->
+<!--    </form>-->
+<!--    <button type="button" class="btn btn-secondary login">Đăng nhập</button>-->
+<!--</nav>-->
+<!--<img  src="static/image/brand-main.jpg" class="mx-auto d-block img">-->
+<!--<div class="container-fluid bg-dark text-light  py-5">-->
+<!--    <div class="container py-5">-->
+<!--        <div class="row g-5">-->
+<!--            <div class="col-lg-4 col-md-4">-->
+<!--                <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">-->
+<!--                    THÔNG TIN LIÊN HỆ</h4>-->
+<!--                <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed-->
+<!--                    dolor</p>-->
+<!--                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Khu dân cư Nhơn Đức, Huyện Nhà Bè, TP.HCM</p>-->
+<!--                <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>metmoi@gmail.com</p>-->
+<!--                <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+84 972614451</p>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-md-4">-->
+<!--                <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">-->
+<!--                    DỊCH VỤ TIỆN ÍCH</h4>-->
+<!--                <div class="d-flex flex-column justify-content-start" id="text-main" >-->
+<!--                    <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Trang chủ</a>-->
+<!--                    <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Giới thiệu</a>-->
+<!--                    <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Đặt lịch khám</a>-->
+<!--                    <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Đội ngũ bác sĩ</a>-->
+<!--                    <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Liên hệ</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-md-4">-->
+<!--                <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">THEO-->
+<!--                    DÕI</h4>-->
+<!--                <div class="d-flex">-->
+<!--                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i-->
+<!--                            class="fab fa-twitter"></i></a>-->
+<!--                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i-->
+<!--                            class="fab fa-facebook-f"></i></a>-->
+<!--                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i-->
+<!--                            class="fab fa-linkedin-in"></i></a>-->
+<!--                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i-->
+<!--                            class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="container-fluid bg-dark text-light border-top border-secondary py-4">-->
+<!--    <div class="container">-->
+
+<!--        <div class="row g-5">-->
+<!--            <div class="col-md-6 text-center text-md-start">-->
+<!--                <p class="mb-md-0">&copy; <a class="text-primary" href="#">Your Site Name</a>. All Rights Reserved.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<footer class="bg-primary">-->
+<!--    <nav id="t-footer">-->
+<!--        <ul class="navbar nav container ">-->
+<!--            <li><a class="non-textdecoration" href=""> <i class="fa-solid fa-calendar-days"></i>  Đặt Lịch</a></li>-->
+<!--            <li><a class="non-textdecoration" href=""> <i class="fa-solid fa-handshake-angle"></i>  Hỗ Trợ </a></li>-->
+<!--            <li><a class="non-textdecoration" href=""> <i class="fa-solid fa-location-dot"></i>  Địa Chỉ</a></li>-->
+<!--            <li><a class="non-textdecoration" href=""> <i class="fa-solid fa-phone-flip"></i>  Liên Hệ</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</footer>-->
+
+<!--</body>-->
+<!--</html>-->
