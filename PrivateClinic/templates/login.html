@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+            rel="shortcut icon"
+            href="./asset/img/icon-STSD.png"
+            type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="/static/css/login.css"/>
+    <link rel="stylesheet" href="./asset/font/themify-icons/"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon"
+          href="https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1703116800&semt=ais"
+          type="image/img">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Phòng khám mạch tư</title>
+</head>
+<body>
+<div class="loading">
+    <img src="/static/image/load1.gif" alt="loading..."/>
+</div>
+<div class="wrapper">
+    <!-- Left -->
+    <div class="left col"></div>
+
+    <!-- Right -->
+    <div class="right col">
+        <!-- Sign in -->
+        <div id="signIn" class="container active">
+            <div class="img-logo">
+                <img src="/static/image/hinh6.png" alt="Logo"/>
+            </div>
+            <h4>Đăng nhập</h4>
+            <form class="signIn-form">
+                <div class="signIn-items">
+                    <div>
+                        <label for="signIn-email">Địa chỉ email:</label>
+                        <div class="item">
+                            <label for="signIn-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </label>
+                            <input id="signIn-email" type="email" placeholder="Email"/>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="signIn-password">Mật khẩu:</label>
+                        <div class="item">
+                            <label for="signIn-password">
+                                <i class="fa-solid fa-key"></i>
+                            </label>
+                            <input
+                                    id="signIn-password"
+                                    type="password"
+                                    placeholder="Mật khẩu"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="signIn-choose">
+                    <div class="check">
+                        <input type="checkbox" id="check"/>
+                        <label for="check">Giữ đăng nhập</label>
+                    </div>
+                    <div class="forgot-password">
+                        <span>Quên mật khẩu?</span>
+                    </div>
+                </div>
+                <div class="main-btn-active">
+                    <a href="./home.html" target="_blank">ĐĂNG NHẬP</a>
+                </div>
+                <div class="social">
+                    <button class="fb">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            Facebook
+                        </a>
+                    </button>
+                    <button class="gmail">
+                        <a
+                                href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                target="_blank"
+                        >
+                            <i class="fa-brands fa-google"></i>
+                            Google</a
+                        >
+                    </button>
+                </div>
+                <div class="last-question">
+                    <div class="question">Bạn chưa có tài khoản?</div>
+                    <span>Đăng ký</span>
+                </div>
+            </form>
+        </div>
+        <!-- Sign up -->
+        <div id="signUp" class="container">
+            <div class="img-logo">
+                <img src="/static/image/hinh6.png" alt="Logo"/>
+            </div>
+            <h4>Đăng ký tài khoản mới</h4>
+            <h6>Vui lòng điền các thông tin sau!</h6>
+            <form class="signUp-form">
+                <div class="signUp-items">
+                    <div class="item">
+                        <label for="signUp-name">
+                            <i class="fa-solid fa-user"></i>
+                        </label>
+                        <input id="signUp-name" type="text" placeholder="Tên"/>
+                    </div>
+                    <div class="item">
+                        <label for="signUp-email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </label>
+                        <input id="signUp-email" type="email" placeholder="Email"/>
+                    </div>
+                    <div class="item">
+                        <label for="signUp-tel">
+                            <i class="fa-solid fa-phone"></i>
+                        </label>
+                        <input id="signUp-tel" type="tel" placeholder="Số điện thoại"/>
+                    </div>
+                    <div class="item">
+                        <label for="signUp-password">
+                            <i class="fa-solid fa-key"></i>
+                        </label>
+                        <input
+                                id="signUp-password"
+                                type="password"
+                                placeholder="Mật khẩu"
+                        />
+                    </div>
+                    <div class="item">
+                        <label for="signUp-career">
+                            <i class="fa-solid fa-clipboard"></i>
+                        </label>
+                        <input id="signUp-career" type="text" placeholder="Lĩnh vực"/>
+                    </div>
+                    <div class="signUp-choose">
+                        <input id="signUp-check" type="checkbox" id="check"/>
+                        <label for="signUp-check">
+                            Tôi đồng ý với <a href="">chính sách bảo mật</a> và
+                            <a href="">điều khoản sử dụng</a> của quý doanh nghiệp.
+                        </label>
+                    </div>
+                </div>
+                <div class="main-btn">
+                    <span>ĐĂNG KÝ</span>
+                </div>
+                <div class="social">
+                    <button class="fb">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            Facebook
+                        </a>
+                    </button>
+                    <button class="gmail">
+                        <a
+                                href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                target="_blank"
+                        >
+                            <i class="fa-brands fa-google"></i>
+                            Google</a
+                        >
+                    </button>
+                </div>
+                <div class="last-question">
+                    <div class="question">Đã có tài khoản?</div>
+                    <span>Đăng nhập</span>
+                </div>
+            </form>
+        </div>
+        <!-- Forgot password -->
+        <div id="forgot-pw" class="container">
+            <div class="img-logo">
+                <img src="/static/image/hinh6.png" alt="Logo"/>
+            </div>
+            <h4>Quên mật khẩu</h4>
+            <h6>Điền email của bạn đã đăng ký!</h6>
+            <form class="forgot-form">
+                <div class="forgot-items">
+                    <div>
+                        <label for="forgot-email">Email:</label>
+                        <div class="item">
+                            <label for="">
+                                <i class="fa-solid fa-envelope"></i>
+                            </label>
+                            <input id="forgot-email" type="email" placeholder="Email"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-btn">
+                    <span>Đặt lại mật khẩu</span>
+                </div>
+                <div class="last-question">
+                    <div>
+                        <div class="question">Bạn đã có tài khoản?</div>
+                        <span>Đăng nhập</span>
+                    </div>
+                    <div>
+                        <div class="question">Bạn chưa có tài khoản?</div>
+                        <span href="">Đăng ký</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/static/js/login.js"></script>
+</body>
+</html>
