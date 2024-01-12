@@ -2,11 +2,9 @@
 {% block content %}
 <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" style="background-image: url(static/image/slide/slide-1.jpg)">
+            <div class="carousel-item active" style="background-image: url({{url_for('static', filename='image/slide/slide-1.jpg')}})">
                 <div class="container">
                     <h2>Chào mừng đến với <span>Phòng khám NWA</span></h2>
                     <p>Với trang thiết bị y tế tiên tiến và đội ngũ chuyên gia hàng đầu, Phòng khám NWA
@@ -103,7 +101,7 @@
 
             <div class="row">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="static/image/about.jpg" class="img-fluid" alt="">
+                    <img src="{{url_for('static', filename='image/about.jpg')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
                     <h3>PHÒNG KHÁM NWA</h3>
@@ -134,7 +132,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Dịch vụ</h2>
+                <h2>Chuyên khoa</h2>
                 <p>Phòng khám đảm bảo chất lượng dịch vụ y tế cao cấp, đồng thời không ngừng nâng cao và cải tiến theo
                     thời gian để đáp ứng nhu cầu ngày càng cao của bệnh nhân.</p>
             </div>
@@ -170,17 +168,14 @@
     </section><!-- End Services Section -->
     <section id="doctors" class="doctors section-bg">
         <div class="container" data-aos="fade-up">
-
             <div class="section-title">
                 <h2>Bác sĩ</h2>
             </div>
-
             <div class="row">
-
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
                         <div class="member-img">
-                            <img src="static/image/doctors/doctors-1.jpg" class="img-fluid" alt="">
+                            <img src="{{url_for('static', filename='image/doctors/doctors-1.jpg')}}" class="img-fluid" alt="">
                             <div class="social">
                                 <a href=""><i class="bi bi-twitter"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -198,7 +193,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="200">
                         <div class="member-img">
-                            <img src="static/image/doctors/doctors-2.jpg" class="img-fluid" alt="">
+                            <img src="{{url_for('static', filename='image/doctors/doctors-2.jpg')}}" class="img-fluid" alt="">
                             <div class="social">
                                 <a href=""><i class="bi bi-twitter"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -216,7 +211,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="300">
                         <div class="member-img">
-                            <img src="static/image/doctors/doctors-3.jpg" class="img-fluid" alt="">
+                            <img src="{{url_for('static', filename='image/doctors/doctors-3.jpg')}}" class="img-fluid" alt="">
                             <div class="social">
                                 <a href=""><i class="bi bi-twitter"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -234,7 +229,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="400">
                         <div class="member-img">
-                            <img src="static/image/doctors/doctors-4.jpg" class="img-fluid" alt="">
+                            <img src="{{url_for('static', filename='image/doctors/doctors-4.jpg')}}" class="img-fluid" alt="">
                             <div class="social">
                                 <a href=""><i class="bi bi-twitter"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -254,28 +249,21 @@
         </div>
     </section>
 
-
-    <section id="contact" class="contact">
+    <section id="appointment" class="contact">
         <div class="container">
-
             <div class="section-title">
-                <h2>Liên hệ</h2>
+                <h2>Đặt lịch hẹn</h2>
             </div>
-
         </div>
-
         <div class="container">
-
             <div class="row">
-
                 <div class="col-lg-6">
-
                     <div class="row">
                         <div class="col-md-12">
                             <div class="info-box">
                                 <i class="bx bx-map"></i>
                                 <h3>Địa chỉ</h3>
-                                <p>Nhà Bè, TP. Hồ Chí Mình, Việt Nam</p>
+                                <p>Nhà Bè, TP.Hồ Chí Minh, Việt Nam</p>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -293,28 +281,41 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="col-lg-6">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Họ và tên"
-                                       required="">
-                            </div>
-                            <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email"
-                                       placeholder="Nhập Email" required="">
-                            </div>
+                    <form action="{{url_for('save_appointment_new')}}" method="post" role="form" class="php-email-form row g-3">
+                        <div class="col-md-12">
+                            <input name="hoTen" type="text" class="form-control" value="" placeholder="Họ và tên">
                         </div>
-                        <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Tiêu đề"
-                                   required="">
+                        <div class="col-md-6">
+
+                            <input name="gioiTinh" type="text" class="form-control" value="" placeholder="Giới tính">
                         </div>
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="7" placeholder="Lời nhắn"
-                                      required=""></textarea>
+                        <div class="col-md-6">
+
+                            <input name="soDienThoai" type="text" class="form-control" value="" placeholder="Số điện thoại">
+                        </div>
+                        <div class="col-md-12">
+
+                            <input name="email" type="email" class="form-control" value="" placeholder="Nhập email">
+                        </div>
+                        <div class="col-12">
+                            <input name="diaChi" type="text" class="form-control" value="" placeholder="Địa chỉ">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Ngày sinh:</label>
+                            <input name="ngaySinh" type="date" class="form-control" value="" placeholder="Ngày sinh">
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <label>Ngày hẹn:</label>
+
+                            <input  type="date" class="form-control" name="ngayHen" placeholder="Ngày hẹn">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Đăng ký</button>
                         </div>
                     </form>
                 </div>
@@ -322,6 +323,5 @@
         </div>
     </section>
 </main>
-
 {% endblock %}
 

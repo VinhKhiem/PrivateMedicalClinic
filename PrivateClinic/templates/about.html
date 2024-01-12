@@ -1,22 +1,18 @@
 {% extends 'layout/base_main.html' %}
 {% block content %}
 <main id="main" class="main">
-    <div class="pagetitle">
-        <h1>Giới thiệu</h1>
-
-    </div><!-- End Page Title -->
 <div class="container-fluid py-5">
     <div class="container">
         <div class="row gx-5">
             <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                 <div class="position-relative h-100">
                     <img class="position-absolute w-100 h-100 rounded"
-                         src="{{url_for('static', filename='image/about.jpg')}}" style="object-fit: cover;">
+                         src="{{url_for('static', filename='img/about.jpg')}}" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="mb-4">
-
+                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Giới thiệu</h5>
                     <h1 class="display-4">Chăm sóc y tế tốt nhất cho bạn và gia đình</h1>
                 </div>
                 <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua
@@ -57,55 +53,39 @@
 <!-- About End -->
 
 <!-- Search Start -->
-<section id="services" class="services services">
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Chuyên khoa</h2>
-                <p>Phòng khám đảm bảo chất lượng dịch vụ y tế cao cấp, đồng thời không ngừng nâng cao và cải tiến theo
-                    thời gian để đáp ứng nhu cầu ngày càng cao của bệnh nhân.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                    <h4 class="title"><a href="">Nội Khoa</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon"><i class="fas fa-pills"></i></div>
-                    <h4 class="title"><a href="">Ngoại Khoa</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon"><i class="fas fa-hospital-user"></i></div>
-                    <h4 class="title"><a href="">Tai - Mũi - Họng</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon"><i class="fas fa-dna"></i></div>
-                    <h4 class="title"><a href="">Da Liễu</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon"><i class="fas fa-wheelchair"></i></div>
-                    <h4 class="title"><a href="">Sản phụ</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon"><i class="fas fa-notes-medical"></i></div>
-                    <h4 class="title"><a href="">Tiêu hóa</a></h4>
-                </div>
-            </div>
-
+<div class="container-fluid bg-primary  py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">TÌM KIẾM BÁC SĨ</h5>
+            <h1 class="display-4 mb-4">Tìm kiếm chuyên gia về sức khỏe</h1>
+            <h5 class="text-white fw-normal">Duo ipsum erat stet dolor sea ut nonumy tempor. Tempor duo lorem eos sit
+                sed ipsum takimata ipsum sit est. Ipsum ea voluptua ipsum sit justo</h5>
         </div>
-    </section><
+        <div class="mx-auto" style="width: 100%; max-width: 600px;">
+            <form method="post" action="/search-doctor">
+                <div class="input-group">
+                    <input type="text" name="name" class="form-control border-primary w-50" placeholder="Tên">
+                    <button class="btn btn-dark border-0 w-25">Tìm kiếm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Search End -->
+
+
+<!-- Team Start -->
 <div class="container-fluid py-5">
     <div class="container">
-        <div class="section-title">
-                <h2>Đội ngũ bác sĩ</h2>
-                <p>Chuyên gia chăm sóc sức khỏe</p>
-            </div>
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">ĐỘI NGŨ Y - BÁC SĨ</h5>
+            <h1 class="display-4">Chuyên gia chăm sóc sức khỏe</h1>
+        </div>
         <div class="owl-carousel team-carousel position-relative">
             <div class="team-item">
                 <div class="row g-0 bg-light rounded overflow-hidden">
                     <div class="col-12 col-sm-5 h-100">
-                        <img class="img-fluid h-100" src="{{url_for('static', filename='image/team-1.jpg')}}"
+                        <img class="img-fluid h-100" src="{{url_for('static', filename='img/team-1.jpg')}}"
                              style="object-fit: cover;">
                     </div>
                     <div class="col-12 col-sm-7 h-100 d-flex flex-column">
@@ -129,7 +109,7 @@
             <div class="team-item">
                 <div class="row g-0 bg-light rounded overflow-hidden">
                     <div class="col-12 col-sm-5 h-100">
-                        <img class="img-fluid h-100" src="{{url_for('static', filename='image/team-2.jpg')}}"
+                        <img class="img-fluid h-100" src="{{url_for('static', filename='img/team-2.jpg')}}"
                              style="object-fit: cover;">
                     </div>
                     <div class="col-12 col-sm-7 h-100 d-flex flex-column">
@@ -153,7 +133,7 @@
             <div class="team-item">
                 <div class="row g-0 bg-light rounded overflow-hidden">
                     <div class="col-12 col-sm-5 h-100">
-                        <img class="img-fluid h-100" src="{{url_for('static', filename='image/team-3.jpg')}}"
+                        <img class="img-fluid h-100" src="{{url_for('static', filename='img/team-3.jpg')}}"
                              style="object-fit: cover;">
                     </div>
                     <div class="col-12 col-sm-7 h-100 d-flex flex-column">
@@ -179,4 +159,3 @@
 </div>
 </main>
 {% endblock %}
-
