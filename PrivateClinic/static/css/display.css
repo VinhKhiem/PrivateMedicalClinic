@@ -498,6 +498,10 @@ font-size:48px;
   padding: 3px 6px;
 }
 
+.header-nav .notifications {
+  inset: 8px -15px auto auto !important;
+}
+
 .header-nav .notifications .notification-item {
   display: flex;
   align-items: center;
@@ -524,6 +528,10 @@ font-size:48px;
 
 .header-nav .notifications .notification-item:hover {
   background-color: #f6f9ff;
+}
+
+.header-nav .messages {
+  inset: 8px -15px auto auto !important;
 }
 
 .header-nav .messages .message-item {
@@ -1226,4 +1234,33 @@ font-size:48px;
   text-align: center;
   font-size: 13px;
   color: #012970;
-}
+  }
+ .search-container {
+            display: flex;
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-input {
+            width: 200px; /* Đặt chiều rộng của input theo mong muốn */
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .search-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            outline: none;
+        }
+        .search-button:hover {
+            background-color: #45a049;
+        }
